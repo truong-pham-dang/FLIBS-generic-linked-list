@@ -1,0 +1,32 @@
+# By DANG Truong
+# Small changes in the codes to make it compiles properly.
+
+# Commands:
+gfortran -c linkedlist.f90
+gfortran test_list.f90 linkedlist.o
+./a.out
+
+# Result:
+Expected: D, C, B, A
+           0 D                   
+           1 C                   
+           2 B                   
+           3 A                   
+ Expected: D, C, ZZ, B, A
+           0 D                   
+           1 C                   
+           2 ZZ                  
+           3 B                   
+           4 A                   
+ Expected: WWW, C, ZZ, B, A
+           0 WWW                 
+           1 C                   
+           2 ZZ                  
+           3 B                   
+           4 A                   
+ Expected: WWW, C, B, A
+           0 WWW                 
+           1 C                   
+           2 B                   
+           3 A                   
+ Number of elements (expected 4):            4
